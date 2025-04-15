@@ -2,6 +2,9 @@ import socket
 import sys
 from datetime import datetime
 
+# This script scans a range of ports on a specified host to check if they are open or closed.
+# It uses the socket library to create a TCP connection to each port in the specified range.
+
 def scan_ports(target_host, start_port, end_port):
     print(f"\n[INFO] Starting scan on host: {target_host}")
     print(f"[INFO] Port range: {start_port} - {end_port}")
